@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inputFragment">
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="ca.tetervak.datedialogdemo.InputFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/input_fragment" >
+        <action
+            android:id="@+id/action_inputFragment_to_dateDialog"
+            app:destination="@id/dateDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/dateDialog"
+        android:name="ca.tetervak.datedialogdemo.dialogs.DateDialog"
+        android:label="DateDialog" >
+        <argument
+            android:name="requestCode"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="java.util.Date" />
+    </dialog>
+</navigation>
