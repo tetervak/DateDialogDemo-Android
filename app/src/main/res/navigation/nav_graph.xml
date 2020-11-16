@@ -21,9 +21,6 @@
             android:name="requestCode"
             app:argType="integer" />
         <argument
-            android:name="title"
-            app:argType="string" />
-        <argument
             android:name="date"
             app:argType="java.util.Date" />
     </dialog>

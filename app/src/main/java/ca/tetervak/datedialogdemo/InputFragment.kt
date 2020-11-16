@@ -43,7 +43,7 @@ class InputFragment : Fragment() {
         binding.editButton.setOnClickListener {
             val action =
                 InputFragmentDirections.actionInputFragmentToDateDialog(
-                    DATE_REQUEST, getString(R.string.edit_date), date)
+                    DATE_REQUEST, date)
             navController.navigate(action)
         }
         DateDialog.setResultListener(this, R.id.inputFragment){
