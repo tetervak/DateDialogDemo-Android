@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Date Dialog Demo</string>
-    <string name="action_settings">Settings</string>
 
     <!-- about dialog -->
     <string name="about">About</string>

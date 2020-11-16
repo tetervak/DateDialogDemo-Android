@@ -24,4 +24,8 @@
             android:name="date"
             app:argType="java.util.Date" />
     </dialog>
+    <dialog
+        android:id="@+id/aboutDialog"
+        android:name="ca.tetervak.datedialogdemo.dialogs.AboutDialog"
+        android:label="AboutDialog" /><action android:id="@+id/action_global_aboutDialog" app:destination="@id/aboutDialog"/>
 </navigation>
